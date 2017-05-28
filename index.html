@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>How's the Weather?</title>
+	<link rel="stylesheet" type="text/css" href="lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="container" id="master-wrapper">
+
+		<div class="row" id="navSearch">
+			<label class="col-md-1" for="searchTerm">Enter Your Zip Code:</label>
+			<input type="text" class="col-md-5" name="searchTerm" id="input">
+			<button type="submit" id="submit">Submit</button>
+		</div> <!-- End Row -->
+
+		<div class="hidden" id="toolbar">
+			<div class="row">
+				<h1>How's the Weather?</h1>
+		</div>
+		<div class="row" id="weather-results">
+			<div class="row weather"></div>
+		</div> <!-- End Row -->
+
+	</div> <!-- End Container -->
+
+	<script type="text/javascript" src="lib/node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="lib/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="lib/node_modules/bootstrap-slider/dist/bootstrap-slider.min.js"></script>
+	<script type="text/javascript" src="dist/app.js"></script>
+</body>
+</html>
